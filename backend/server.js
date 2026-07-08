@@ -15,6 +15,8 @@ const port = process.env.PORT || 4000; // Use environment variable for Render
 const allowedOrigins = [
     'http://localhost:5173',  // Frontend local
     'http://localhost:5174',  // Admin local
+    'https://food-delivery-website-pi-taupe.vercel.app/',
+    'https://food-delivery-website-admin-eight.vercel.app/'
     // We'll add production URLs after deploying frontend/admin
     // 'https://food-delivery-frontend.vercel.app',
     // 'https://food-delivery-admin.vercel.app',
@@ -24,15 +26,10 @@ const allowedOrigins = [
 app.use(express.json());
 app.use(cors({
     origin: function(origin, callback){
-        // Allow requests with no origin (like mobile apps, curl, Postman)
         if(!origin) return callback(null, true);
-        
         if(allowedOrigins.indexOf(origin) === -1){
-            // For development, allow all origins. For production, restrict it.
-            if(process.env.NODE_ENV === 'production'){
-                var msg = 'The CORS policy for this site does not allow access from the specified Origin.';
-                return callback(new Error(msg), false);
-            }
+            var msg = 'The CORS policy for this site does not allow access from the specified Origin.';
+            return callback(new Error(msg), false);
         }
         return callback(null, true);
     },
