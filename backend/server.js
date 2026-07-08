@@ -15,8 +15,8 @@ const port = process.env.PORT || 4000; // Use environment variable for Render
 const allowedOrigins = [
     'http://localhost:5173',  // Frontend local
     'http://localhost:5174',  // Admin local
-    'https://food-delivery-website-pi-taupe.vercel.app/',
-    'https://food-delivery-website-admin-eight.vercel.app/'
+    'https://food-delivery-website-pi-taupe.vercel.app',
+    'https://food-delivery-website-admin-eight.vercel.app'
     // We'll add production URLs after deploying frontend/admin
     // 'https://food-delivery-frontend.vercel.app',
     // 'https://food-delivery-admin.vercel.app',
