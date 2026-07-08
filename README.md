@@ -207,9 +207,9 @@ This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
-**Your Name**  
-GitHub: [@yourusername](https://github.com/yourusername)  
-LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
+**Sagar Motekar**  
+GitHub: Sagarmotekar(https://github.comSagarmotekar)  
+LinkedIn: [Sagar Motekar](https://www.linkedin.com/in/sagar-motekar-514650258/)
 
 ## 🙏 Acknowledgments
 
